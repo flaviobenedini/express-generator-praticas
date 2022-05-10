@@ -1,9 +1,7 @@
 const users = require('../data/user.js')
 
 const controller = {
-index: function(req, res, next) {
-    res.send('respond with a resource');
-  }
+index: (req, res) => res.render('users', {title: 'Usuários', users})
 }
 
 module.exports = controller
