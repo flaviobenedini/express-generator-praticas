@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+article {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+}
+
+.background {
+  background: #d7d7d7;
+}

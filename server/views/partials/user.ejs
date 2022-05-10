@@ -1,4 +1,12 @@
-<article id="user<%= user.id %>">
+
+<%
+  let background = ''
+  if (user.assinante) {
+    background = 'background'
+  }
+%>
+
+<article class="<%= background %>" id="user<%= user.id %>">
     <img src="<%= user.avatar %>" alt="" width="72" height="72">
     <h2><%= user.nome %> <%= user.sobrenome %></h2>
     <p><%= user.email %></p>
